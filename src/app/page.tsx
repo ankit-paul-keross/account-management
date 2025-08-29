@@ -1,6 +1,7 @@
 "use client"
 
 import AccountTable from "@/components/AccountTable";
+import CreateAccountForm from "@/components/AddForm";
 import Header from "@/components/Header";
 import HomeCard from "@/components/HomeCard";
 import { Button } from "@/components/ui/button";
@@ -107,7 +108,8 @@ export default function Home() {
       
       {/* ==========================  TABLE   ========================== */}
       <AccountTable accounts={filteredData} />
-
+       
+       <CreateAccountForm />
     </>
   );
 }
