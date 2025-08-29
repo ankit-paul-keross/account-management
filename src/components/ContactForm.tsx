@@ -91,7 +91,7 @@ function ContactForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5 mt-6">
-        <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-3 items-start">
+        <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-4 items-start">
           <FormField
             control={form.control}
             name="firstName"
@@ -155,7 +155,7 @@ function ContactForm() {
             </FormItem>
           )}
         />
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-3 items-start">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-4 items-start">
           <FormField
             control={form.control}
             name="phoneNo"
@@ -187,7 +187,7 @@ function ContactForm() {
             )}
           />
         </div>
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-3 items-start">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-4 items-start">
           <FormField
             control={form.control}
             name="department"
@@ -237,7 +237,7 @@ function ContactForm() {
             </FormItem>
           )}
         />
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-3 items-start">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-4 items-start">
           <FormField
             control={form.control}
             name="city"
@@ -271,7 +271,7 @@ function ContactForm() {
             )}
           />
         </div>
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-3 items-start">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-4 items-start">
           <FormField
             control={form.control}
             name="pincode"

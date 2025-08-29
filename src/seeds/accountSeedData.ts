@@ -16,7 +16,7 @@ export const accountSeedData: Account[] = [
         name: "URC Global (URC)",
         manager: "Farouk Said",
         isChannelPartner: false,
-        channelPartner: "Gleoss",
+        channelPartner: "Gleeds",
         status: "Active",
         createdOn: "21-Nov-2022",
         updatedOn: "15-Jun-2023"
@@ -26,7 +26,7 @@ export const accountSeedData: Account[] = [
         name: "University of Nottingham [1]",
         manager: "Farouk Said",
         isChannelPartner: false,
-        channelPartner: "Gleoss",
+        channelPartner: "Gleeds",
         status: "Active",
         createdOn: "02-Aug-2023",
         updatedOn: "03-Mar-2025"
