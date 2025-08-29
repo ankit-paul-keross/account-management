@@ -1,13 +1,12 @@
 "use client";
 
 import AccountTable from "@/components/AccountTable";
-import CreateAccountForm from "@/components/AddForm";
+import CreateAccountForm from "@/components/CreateAccountForm";
 import Header from "@/components/Header";
 import HomeCard from "@/components/HomeCard";
 import { Button } from "@/components/ui/button";
-import { DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { accountSeedData } from "@/seeds/accountSeedData";
-import { Dialog } from "@radix-ui/react-dialog";
 import {
   DollarSign,
   Download,
@@ -97,13 +96,13 @@ export default function Home() {
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline">
-                <Plus /> Create Account
+                <Plus /> Add Account
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-3xl overflow-y-scroll max-h-screen">
               
                <DialogHeader>
-                  <DialogTitle>Add Account</DialogTitle>
+                  <DialogTitle>Create Account</DialogTitle>
                 </DialogHeader>
               <CreateAccountForm/>
               
