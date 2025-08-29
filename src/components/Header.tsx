@@ -1,7 +1,10 @@
 import { ThemeToggleBtn } from "@/components/ThemeToggleBtn";
 import { Input } from "./ui/input";
 
-function Header() {
+
+type CallbackFn = (value:string)=>void;
+
+function Header({searchTerm, handleSearch}:{searchTerm:string, handleSearch:CallbackFn}) {
   return (
     <div className="bg-card text-card-foreground border px-4 py-2 shadow-sm flex flex-col sm:flex-row items-center">
       <div className="w-full flex items-center justify-between sm:hidden mb-2">
@@ -16,7 +19,9 @@ function Header() {
       <Input 
         className="w-full sm:w-80 lg:w-96 mb-2 sm:mb-0" 
         type="text" 
-        placeholder="Search Accounts..." 
+        placeholder="Search Accounts..."
+        value={searchTerm}
+        onChange={(e) => handleSearch(e.target.value)}
       />
       <div className="hidden sm:block mx-1" />
       <div className="hidden sm:block">
