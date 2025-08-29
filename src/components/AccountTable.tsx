@@ -9,7 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import CreateContactForm from "@/components/CreateContactForm";
+import ContactForm from "@/components/ContactForm";
 import {
   Table,
   TableBody,
@@ -93,7 +93,7 @@ export default function AccountTable({ accounts }: { accounts: Account[] }) {
                         <DialogHeader>
                           <DialogTitle>Create Contact</DialogTitle>
                         </DialogHeader>
-                        <CreateContactForm />
+                        <ContactForm />
                       </DialogContent>
                     </Dialog>
                     {/* ===================== EDIT ACCOUNT BUTTON ===================== */}

@@ -20,7 +20,7 @@ import {
 
 
 
-export default function CreateAccountForm() {
+export default function AccountForm() {
 
 
 const formatDate = (date: Date) => {

@@ -1,8 +1,8 @@
 "use client";
 
 import AccountTable from "@/components/AccountTable";
-import CreateAccountForm from "@/components/CreateAccountForm";
-import CreateContactForm from "@/components/CreateContactForm";
+import AccountForm from "@/components/AccountForm";
+import ContactForm from "@/components/ContactForm";
 import Header from "@/components/Header";
 import HomeCard from "@/components/HomeCard";
 import { Button } from "@/components/ui/button";
@@ -106,7 +106,7 @@ export default function Home() {
                <DialogHeader>
                   <DialogTitle>Create Account</DialogTitle>
                 </DialogHeader>
-              <CreateAccountForm/>
+              <AccountForm/>
             </DialogContent>
           </Dialog>
 

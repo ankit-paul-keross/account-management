@@ -64,7 +64,7 @@ const formSchema = z.object({
   country: z.string().min(1, { message: "Country cannot be empty" }),
 });
 
-function CreateContactForm() {
+function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -316,4 +316,4 @@ function CreateContactForm() {
   );
 }
 
-export default CreateContactForm;
+export default ContactForm;
