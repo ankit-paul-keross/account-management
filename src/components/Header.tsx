@@ -16,6 +16,7 @@ function Header({searchTerm, handleSearch}:{searchTerm:string, handleSearch:Call
       <div className="text-xl font-semibold flex-1 w-full sm:flex sm:items-center sm:justify-start hidden">
         Account Management
       </div>
+      {/* ==========================  SEARCH BAR   ========================== */}
       <Input 
         className="w-full sm:w-80 lg:w-96 mb-2 sm:mb-0" 
         type="text" 
@@ -24,6 +25,7 @@ function Header({searchTerm, handleSearch}:{searchTerm:string, handleSearch:Call
         onChange={(e) => handleSearch(e.target.value)}
       />
       <div className="hidden sm:block mx-1" />
+      {/* ==========================  THEME TOGGLE BTN   ========================== */}
       <div className="hidden sm:block">
         <ThemeToggleBtn />
       </div>

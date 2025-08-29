@@ -23,6 +23,7 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("")
   const [filteredData, setFilteredData] = useState(accountSeedData)
 
+  {/* ==========================  Handle Search Functionality   ========================== */}
   const handleSearch = (value: string) => {
     setSearchTerm(value)
     const filtered = accountSeedData.filter(account =>
@@ -35,8 +36,10 @@ export default function Home() {
 
   return (
     <>
+      {/* ==========================  HEADER   ========================== */}
       <Header searchTerm={searchTerm} handleSearch={handleSearch} />
 
+      {/* ==========================  CARDS   ========================== */}
       <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1  gap-3 mx-2 mt-4">
         <HomeCard
           title="Total Revenue (USD)"
@@ -79,12 +82,15 @@ export default function Home() {
         />
       </div>
 
+      
+      {/* ==========================  TABLE ACTIONS   ========================== */}
       <div className="flex flex-col md:flex-row px-2 gap-2 md:gap-0 mt-4">
         <div className="flex w-full items-center text-muted-foreground text-sm mb-2 md:mb-0 md:mr-4">
           Drop here to group by columns
         </div>
         <div className="flex flex-wrap md:flex-nowrap space-x-0 md:space-x-2 gap-2 md:gap-0">
           <Button variant="outline">
+            {/* TODO: Add Account Form */}
             <Plus /> Add Account
           </Button>
           <Button variant="outline">
@@ -98,7 +104,8 @@ export default function Home() {
           </Button>
         </div>
       </div>
-
+      
+      {/* ==========================  TABLE   ========================== */}
       <AccountTable accounts={filteredData} />
 
     </>

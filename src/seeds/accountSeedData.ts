@@ -33,7 +33,7 @@ export const accountSeedData: Account[] = [
     },
     {
         id: "4",
-        name: "Siemens [1]",
+        name: "Shopanova [1]",
         manager: "n/a",
         isChannelPartner: false,
         channelPartner: "",
@@ -63,7 +63,7 @@ export const accountSeedData: Account[] = [
     },
     {
         id: "7",
-        name: "Prektech Test Account [Prek]",
+        name: "Prabhat Test Account [Prab]",
         manager: "n/a",
         isChannelPartner: false,
         channelPartner: "",
@@ -73,7 +73,7 @@ export const accountSeedData: Account[] = [
     },
     {
         id: "8",
-        name: "Partners International Limited [1]",
+        name: "Parsons International Limited [1]",
         manager: "Farouk Said",
         isChannelPartner: false,
         channelPartner: "",
