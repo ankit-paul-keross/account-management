@@ -1,14 +1,27 @@
-
 import { ThemeToggleBtn } from "@/components/ThemeToggleBtn";
 import { Input } from "./ui/input";
 
 function Header() {
   return (
-    <div className="flex flex-row bg-card text-card-foreground border px-4 py-2 shadow-sm">
-      <div className="text-xl w-full font-semibold">Account Management</div>
-      <Input className="w-3xl" type="text" placeholder="Search Accounts..."  />
-      <div className="mx-1"></div>
-      <ThemeToggleBtn/>
+    <div className="bg-card text-card-foreground border px-4 py-2 shadow-sm flex flex-col sm:flex-row items-center">
+      <div className="w-full flex items-center justify-between sm:hidden mb-2">
+        <div className="text-xl font-semibold text-center w-full">
+          Account Management
+        </div>
+        <ThemeToggleBtn />
+      </div>
+      <div className="text-xl font-semibold flex-1 w-full sm:flex sm:items-center sm:justify-start hidden">
+        Account Management
+      </div>
+      <Input 
+        className="w-full sm:w-80 lg:w-96 mb-2 sm:mb-0" 
+        type="text" 
+        placeholder="Search Accounts..." 
+      />
+      <div className="hidden sm:block mx-1" />
+      <div className="hidden sm:block">
+        <ThemeToggleBtn />
+      </div>
     </div>
   );
 }
