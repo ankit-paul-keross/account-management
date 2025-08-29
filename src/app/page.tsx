@@ -2,6 +2,7 @@
 
 import AccountTable from "@/components/AccountTable";
 import CreateAccountForm from "@/components/CreateAccountForm";
+import CreateContactForm from "@/components/CreateContactForm";
 import Header from "@/components/Header";
 import HomeCard from "@/components/HomeCard";
 import { Button } from "@/components/ui/button";
@@ -93,6 +94,8 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap md:flex-nowrap space-x-0 md:space-x-2 gap-2 md:gap-0">
           
+          
+          
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline">
@@ -100,12 +103,10 @@ export default function Home() {
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-3xl overflow-y-scroll max-h-screen">
-              
                <DialogHeader>
                   <DialogTitle>Create Account</DialogTitle>
                 </DialogHeader>
               <CreateAccountForm/>
-              
             </DialogContent>
           </Dialog>
 
