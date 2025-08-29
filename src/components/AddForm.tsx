@@ -23,8 +23,7 @@ export default function CreateAccountForm() {
   const [isChannelPartner, setIsChannelPartner] = useState(false)
 
   return (
-    <div className="p-6 w-full max-w-3xl mx-auto bg-background rounded-xl shadow">
-      <h2 className="text-xl font-semibold mb-6">Create Account</h2>
+    <div className="pt-6 w-full max-w-3xl mx-auto bg-background rounded-xl shadow">
 
       {/* Channel Partner */}
       <div className="flex items-center space-x-2 mb-6">
